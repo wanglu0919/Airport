@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/in_header"
+        android:layout_alignParentTop="true"
+        layout="@layout/header_layout" />
+
+   
+        <RelativeLayout
+            android:layout_below="@+id/in_header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF" >
+
+            <GridView
+                android:id="@+id/site_gv_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="#FFFFFF"
+                android:numColumns="3" 
+                android:verticalSpacing="5dip"
+                android:stretchMode="columnWidth"
+                >
+                
+            </GridView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/site_gv_menu"
+                android:background="@drawable/air_bg" >
+
+                <ImageView
+                    android:id="@+id/site_iv_service_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dip"
+                    android:background="@drawable/service_call_bg" />
+            </RelativeLayout>
+        </RelativeLayout>
+   
+
+</RelativeLayout>

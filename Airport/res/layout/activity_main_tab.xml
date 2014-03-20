@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/tab_fl_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/tab_rg_bottom"
+        android:background="#F3F4F4" >
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab_rg_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+      	android:layout_alignParentBottom="true"
+        android:background="#1469AD"
+        android:orientation="horizontal"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip" >
+
+        <Button
+            android:id="@+id/tab_rb_site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:drawableLeft="@drawable/tab_site_press_icon"
+            android:text="机场官网"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:background="@android:color/transparent"
+             />
+
+        <Button
+            android:id="@+id/tab_rb_weibo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|center_vertical"
+            android:button="@null"
+            android:drawableLeft="@drawable/tab_weibo_nomal_icon"
+            android:text="机场微博"
+            android:textColor="#73A2CD"
+            android:textSize="12sp"
+             android:background="@android:color/transparent"
+             />
+
+        <Button
+            android:id="@+id/tab_rb_weixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:drawableLeft="@drawable/tab_weixin_nomal_icon"
+            android:text="机场微信"
+            android:textColor="#73A2CD"
+            android:textSize="12sp"
+             android:background="@android:color/transparent"
+            
+             />
+    </RelativeLayout>
+
+</RelativeLayout>

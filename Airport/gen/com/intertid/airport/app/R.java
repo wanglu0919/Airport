@@ -22,28 +22,32 @@ public final class R {
     }
     public static final class drawable {
         public static final int air_bg=0x7f020000;
-        public static final int air_flight_state_icon=0x7f020001;
-        public static final int ic_launcher=0x7f020002;
-        public static final int logo_title_icon=0x7f020003;
-        public static final int service_call_bg=0x7f020004;
-        public static final int site_back_img=0x7f020005;
-        public static final int site_flight_plan_icon=0x7f020006;
-        public static final int site_news_icon=0x7f020007;
-        public static final int site_person_service_icon=0x7f020008;
-        public static final int site_phone_icon=0x7f020009;
-        public static final int site_traffic_icon=0x7f02000a;
-        public static final int tab_site_nomal_icon=0x7f02000b;
-        public static final int tab_site_press_icon=0x7f02000c;
-        public static final int tab_weibo_nomal_icon=0x7f02000d;
-        public static final int tab_weibo_press_icon=0x7f02000e;
-        public static final int tab_weixin_nomal_icon=0x7f02000f;
-        public static final int tab_weixin_press_icon=0x7f020010;
-        public static final int title_back_normal=0x7f020011;
-        public static final int title_back_pressed=0x7f020012;
-        public static final int title_back_selector=0x7f020013;
-        public static final int title_call_command_normal=0x7f020014;
-        public static final int title_call_command_press=0x7f020015;
-        public static final int title_call_command_selector=0x7f020016;
+        public static final int ic_launcher=0x7f020001;
+        public static final int icon1=0x7f020002;
+        public static final int icon2=0x7f020003;
+        public static final int icon3=0x7f020004;
+        public static final int icon4=0x7f020005;
+        public static final int icon5=0x7f020006;
+        public static final int icon6=0x7f020007;
+        public static final int icon7=0x7f020008;
+        public static final int icon8=0x7f020009;
+        public static final int icon9=0x7f02000a;
+        public static final int logo=0x7f02000b;
+        public static final int logo_title_icon=0x7f02000c;
+        public static final int service_call_bg=0x7f02000d;
+        public static final int site_back_img=0x7f02000e;
+        public static final int tab_site_nomal_icon=0x7f02000f;
+        public static final int tab_site_press_icon=0x7f020010;
+        public static final int tab_weibo_nomal_icon=0x7f020011;
+        public static final int tab_weibo_press_icon=0x7f020012;
+        public static final int tab_weixin_nomal_icon=0x7f020013;
+        public static final int tab_weixin_press_icon=0x7f020014;
+        public static final int title_back_normal=0x7f020015;
+        public static final int title_back_pressed=0x7f020016;
+        public static final int title_back_selector=0x7f020017;
+        public static final int title_call_command_normal=0x7f020018;
+        public static final int title_call_command_press=0x7f020019;
+        public static final int title_call_command_selector=0x7f02001a;
     }
     public static final class id {
         public static final int action_settings=0x7f080011;

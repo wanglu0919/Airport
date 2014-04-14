@@ -3,6 +3,7 @@ package com.intertid.airport.ui.fragment;
 import com.intertid.airport.app.MainTabActivity;
 import com.intertid.airport.app.R;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.content.DialogInterface;
@@ -18,6 +19,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
+import android.webkit.WebSettings.LayoutAlgorithm;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
@@ -120,6 +122,7 @@ public class WebFragment extends Fragment {
 
 	
 	public void flushWebViewData(String  url){
+	
 		url_dept=0;
 		showBtnState();
 		rootUrl=url;
@@ -156,6 +159,7 @@ public class WebFragment extends Fragment {
 
 				@Override
 				public boolean shouldOverrideUrlLoading(WebView view, String url) {
+					
 					view.loadUrl(url);
 					url_dept++;//标示又深了一层URL
 					showBtnState();
@@ -171,11 +175,16 @@ public class WebFragment extends Fragment {
 
 	}
 
+	@SuppressLint("SetJavaScriptEnabled")
 	private void findViews() {
 
 		web_wv_content = (WebView) view.findViewById(R.id.web_wv_content);
 		WebSettings webSettings = web_wv_content.getSettings();
 		webSettings.setJavaScriptEnabled(true);
+		webSettings.setSupportZoom(true);
+		webSettings.setBuiltInZoomControls(true);
+		
+		webSettings.setCacheMode(WebSettings.LOAD_NO_CACHE);
 		head_btn_back=(Button) view.findViewById(R.id.head_btn_back);
 		head_btn_index=(Button) view.findViewById(R.id.head_btn_index);
 		wb_pb = (ProgressBar) view.findViewById(R.id.wb_pb);

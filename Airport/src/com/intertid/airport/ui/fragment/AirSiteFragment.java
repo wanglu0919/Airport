@@ -36,18 +36,19 @@ public class AirSiteFragment extends Fragment implements OnItemClickListener {
 	private View view;
 	private MainTabActivity activity;
 	private GridView site_gv_menu;
-	private String chaneNames[] = new String[] { "机场新闻", "旅客服务", "航班动态",
-			"机场交通", "手机值机", "航班计划" };
+	private String chaneNames[] = new String[] { "航班信息", "旅客服务", "手机值机",
+			"机场交通", "商务信息", "机场新闻","玩在江南","舌尖美食","空港酒店" };
 
-	private int channelIcon[] = new int[] { R.drawable.site_news_icon,
-			R.drawable.site_person_service_icon,
-			R.drawable.air_flight_state_icon, R.drawable.site_traffic_icon,
-			R.drawable.site_phone_icon, R.drawable.site_flight_plan_icon };
+	private int channelIcon[] = new int[] { R.drawable.icon1,
+			R.drawable.icon2,
+			R.drawable.icon3, R.drawable.icon4,
+			R.drawable.icon5, R.drawable.icon6, R.drawable.icon7,R.drawable.icon8,R.drawable.icon9};
 
-	private String urls[] = new String[] { Constants.URLs.AIR_NEWS,
+	private String urls[] = new String[] { Constants.URLs.AIR_INFO,
 			Constants.URLs.AIR_TRAVELLER_SERVICE,
-			Constants.URLs.AIR_FLIGHT_STATE, Constants.URLs.AIR_TRAFFIC,
-			Constants.URLs.AIR_PHONE, Constants.URLs.AIR_FLIGHT_PLAN
+			Constants.URLs.AIR_PHONE, Constants.URLs.AIR_TRAFFIC,
+			Constants.URLs.BUSI_INFO, Constants.URLs.AIR_NEWS,
+			Constants.URLs.PLAY_JANNAN,Constants.URLs.DE_FOOD,Constants.URLs.AIR_HOTEL
 
 	};
 	private List<SiteChannel> siteChannels;

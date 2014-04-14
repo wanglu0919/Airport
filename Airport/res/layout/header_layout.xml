@@ -18,17 +18,18 @@
         android:text="返回"
         android:textColor="@android:color/white"
         android:visibility="gone"
+          android:textSize="14sp"
          />
      
     <RelativeLayout 
-        android:layout_marginLeft="5dip"
+        android:layout_marginLeft="2dip"
         android:layout_centerInParent="true"
          android:layout_width="wrap_content"
     android:layout_height="wrap_content"
         >
     <ImageView
         android:id="@+id/head_logo_icon"
-        android:layout_width="wrap_content"
+        android:layout_width="45dip"
         android:layout_height="wrap_content"
         android:src="@drawable/logo_title_icon" />
 
@@ -36,8 +37,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/head_logo_icon"
-        android:text="苏南硕放国际机场"
-        android:textSize="16sp"
+        android:text="无锡苏南硕放国际机场"
+        android:textSize="15sp"
         android:textStyle="bold"
         android:textColor="@android:color/white"
         android:layout_centerVertical="true"
@@ -54,6 +55,7 @@
         android:background="@drawable/title_call_command_selector"
         android:textColor="@android:color/white"
        	android:text="首页"
+       	  android:textSize="14sp"
        	android:visibility="gone"
         />
 
